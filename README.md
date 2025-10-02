@@ -9,9 +9,11 @@ Pautas para el Sitio Web
 y enlaces a las demás páginas.
 
 ○ Principal: Información general del sitio.
+
 ○ Artículo: Dependiendo de la temática, información sobre los
 productos/servicios. Debe tener contenido a dos o tres columnas, usando
 flexbox.
+
 ○ Formulario de contacto
 
 ■ Al menos 3 campos. Debe tener mail y teléfono (Deben tener
@@ -26,6 +28,7 @@ mostrando los datos enviados (usando createElement).
 HTML (no usar alertas nativas).
 
 ● Uso de carrousel. Debe incorporarlo a la página principal.
+
 ○ Debe ser creado por el estudiante, es decir, no de una librería o copiado de
 un tutorial. La rotación de imágenes debe estar implementada en javascript y
 usando arrays (las imágenes deben estar en un array). Debe tener botones
@@ -34,8 +37,11 @@ desde el último elemento, se debe ir al primero, y si se retrocede desde el
 primero, volver al último.
 
 ● Uso de estilos vistos en clase.
+
 ○ Debe ser desarrollado por el estudiante, es decir sin uso de frameworks.
+
 ○ Cambiar la fuente. Usar margin y padding.
+
 ○ Haga uso de alguna paleta de colores, para mantener el mismo diseño en
 todo el sitio.
 
