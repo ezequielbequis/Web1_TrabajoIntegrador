@@ -1,0 +1,52 @@
+.conteiner{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 300px;
+    font-family: Playfair Display, serif;
+    font-size: large;
+}
+
+/* Zona de navegación */
+section article{
+    height: auto;
+    background-color: #659153;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Diseño del Titulo */
+section article .Titulo{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 0.25rem;
+}
+
+/* Diseño del Subitulo */
+section article .Subtitulo{
+    text-align: center;
+}
+
+/* Diseño de la Información */
+section article .Informacion{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Diseño para el Contenedor de los juegos destacados */
+section article .ContenedorJuegosDestacados{
+    margin-top: 100px;
+}
+
+/* Diseño para los juegos destacados */
+section article .JuegosDestacados{
+    width: 700px;
+    background-color: #324a28;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+section article .InfoJuegosDestacados{
+    background-color: #3c5930;
+    display: inline-block;
+}
