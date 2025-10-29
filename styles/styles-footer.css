@@ -1,0 +1,16 @@
+footer{
+    background-color: #3C5930;
+    margin-top: 0;
+    padding: 2rem 3rem;
+}
+
+footer a{
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    margin: 0;
+    color: white;
+}
