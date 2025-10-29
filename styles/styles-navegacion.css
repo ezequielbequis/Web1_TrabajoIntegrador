@@ -1,7 +1,7 @@
 .conteiner{
     width: 800px;
     margin: 0 auto;
-    margin-top: 300px;
+    padding-top: 300px;
     font-family: Playfair Display, serif;
     font-size: large;
 }
@@ -12,6 +12,7 @@ section article{
     background-color: #659153;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    
 }
 
 /* Diseño del Titulo */
@@ -32,21 +33,78 @@ section article .Informacion{
     margin: 20px;
 }
 
+
 /* Diseño para el Contenedor de los juegos destacados */
-section article .ContenedorJuegosDestacados{
+.ContenedorJuegosDestacados{
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.img-JuegosDestacados{
+    width: 420px;
+    height: auto;
+    padding: 0;
+    border-radius: 5px;
+    
 }
 
 /* Diseño para los juegos destacados */
-section article .JuegosDestacados{
-    width: 700px;
+.InfoJuegosDestacados{ /* Parte Derecha */
+    background-color: #446635;
+    
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 180px;   
+    height: 260px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.JuegosDestacados{ /* Parte Izquierda */
+    width: 420px;
+    height: 240px;
     background-color: #324a28;
-    border-radius: 5px;
-    margin: 0 auto;
+    border-radius: 10px 0 0 10px;
+    color: white;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-section article .InfoJuegosDestacados{
-    background-color: #3c5930;
-    display: inline-block;
+/* Estilos para los textos */
+.titulo-h3{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+.categorias {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    color: white;
+    width: fit-content;
+    background-color: #35502c;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.precio-suma {
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    width: fit-content;
+    padding-top: 40px;
+
 }
