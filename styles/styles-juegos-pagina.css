@@ -1,0 +1,66 @@
+.conteiner{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 250px;
+    font-family: Playfair Display, serif;
+    font-size: large;
+}
+
+section article{
+    height: auto;
+    background-color: #659153;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section article .Titulo{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 0.25rem;
+}
+
+article .carrusel{
+}
+
+article .carrusel .imagenes-carrusel img{
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+article .Comprar{
+    margin: 20px;
+    margin-bottom: 35px;
+    padding: 10px;    
+    display: block;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+}
+
+article .Comprar p{
+    background-color: black;
+    display: inline-block;
+    float: inline-end;
+    margin: 0;
+    padding: 5px;
+    color: white;
+}
+
+article .Informacion{
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+}
+
+article .Requisitos{
+    margin: 20px;
+    padding: 5px;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+}
+
+article .Requisitos ul{
+    list-style-type: square;
+    margin-left: 20px;
+}
