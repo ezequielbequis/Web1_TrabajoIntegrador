@@ -125,6 +125,31 @@ section article .Informacion{
 .boton-cr:hover{
     background-color: #446635;
 }
+
+article .JuegosTop{    
+    height: 290px;
+    width: 192px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Diseño para los Top Games */
+
+article .TopGames{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 80px;
+    padding-top: 0.25rem;
+}
+
+article .Portadas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+}
+
 article .JuegosTop{    
     height: 290px;
     width: 192px;
