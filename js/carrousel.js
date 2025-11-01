@@ -5,9 +5,9 @@ const tlou2 = {
     categorias: ["Acción", "Disparos", "Zombies"],
     precio: "$59.99 USD",
 
-    src: "../resources/img/TLOU2-Destacados.jpg",
+    src: "resources/img/TLOU2-Destacados.jpg",
     alt: "Imagen del juego The Last of Us: Parte 2",
-    link: "../sites/the_last_of_us_parte_2.html"
+    link: "sites/the_last_of_us_parte_2.html"
 };
 
 juegosDestacados.push(tlou2);
@@ -17,9 +17,9 @@ const spiderman_mm = {
     categorias: ["Acción", "Aventura", "Superhéroes"],
     precio: "$49.99 USD",
 
-    src: "../resources/img/SpidermanMM-Destacados.jpg",
+    src: "resources/img/SpidermanMM-Destacados.jpg",
     alt: "Imagen del juego Marvel's Spider-Man: Miles Morales",
-    link: "../sites/spiderman_miles_morales.html"
+    link: "sites/spiderman_miles_morales.html"
 }
 
 juegosDestacados.push(spiderman_mm);
@@ -29,9 +29,9 @@ const bm_wukong = {
     categorias: ["Acción", "Aventura", "Mitología"],
     precio: "$39.99 USD",
 
-    src: "../resources/img/BM-Wukong-Destacados.jpg",
+    src: "resources/img/BM-Wukong-Destacados.jpg",
     alt: "Imagen del juego Black Myth: Wukong",
-    link: "../sites/black_myth_wukong.html"
+    link: "sites/black_myth_wukong.html"
 }
 
 juegosDestacados.push(bm_wukong);
@@ -41,9 +41,9 @@ const forza_horizon5 = {
     categorias: ["Carreras", "Deportes", "Mundo Abierto"],
     precio: "$59.99 USD",
 
-    src: "../resources/img/ForzaHorizon5-Destacados.jpg",
+    src: "resources/img/ForzaHorizon5-Destacados.jpg",
     alt: "Imagen del juego Forza Horizon 5",
-    link: "../sites/forza_horizon_5.html"
+    link: "sites/forza_horizon_5.html"
 }
 
 juegosDestacados.push(forza_horizon5);
@@ -53,9 +53,9 @@ const resident_evil_4 = {
     categorias: ["Terror", "Supervivencia", "Acción"],
     precio: "$59.99 USD",
 
-    src: "../resources/img/ResidentEvil4-Destacados.jpg",
+    src: "resources/img/ResidentEvil4-Destacados.jpg",
     alt: "Imagen del juego Resident Evil 4 Remake",
-    link: "../sites/resident_evil_4_remake.html"
+    link: "sites/resident_evil_4_remake.html"
 }
 
 juegosDestacados.push(resident_evil_4);
@@ -65,9 +65,9 @@ const death_stranding_2 = {
     categorias: ["Acción", "Aventura", "Ciencia Ficción"],
     precio: "$69.99 USD",
 
-    src: "../resources/img/DeathStranding2-Destacados.jpg",
+    src: "resources/img/DeathStranding2-Destacados.jpg",
     alt: "Imagen del juego Death Stranding 2",
-    link: "../sites/death_stranding_2.html"
+    link: "sites/death_stranding_2.html"
 }
 
 juegosDestacados.push(death_stranding_2);
@@ -77,9 +77,9 @@ const god_of_war_ragnarok = {
     categorias: ["Acción", "Aventura", "Mitología Nórdica"],
     precio: "$59.99 USD",
 
-    src: "../resources/img/GodOfWarRagnarok-Destacados.jpg",
+    src: "resources/img/GodOfWarRagnarok-Destacados.jpg",
     alt: "Imagen del juego God of War: Ragnarok",
-    link: "../sites/god_of_war_ragnarok.html"
+    link: "sites/god_of_war_ragnarok.html"
 }
 
 juegosDestacados.push(god_of_war_ragnarok);
@@ -89,9 +89,9 @@ const sons_of_the_forest = {
     categorias: ["Terror", "Supervivencia", "Aventura"],
     precio: "$49.99 USD",
 
-    src: "../resources/img/SonsOfTheForest-Destacados.jpg",
+    src: "resources/img/SonsOfTheForest-Destacados.jpg",
     alt: "Imagen del juego Sons of the Forest",
-    link: "../sites/sons_of_the_forest.html"
+    link: "sites/sons_of_the_forest.html"
 }
 
 juegosDestacados.push(sons_of_the_forest);
