@@ -115,6 +115,7 @@ article .TopGames{
     text-decoration: underline;
     margin-top: 80px;
     padding-top: 0.25rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
 }
 
 article .Portadas{
