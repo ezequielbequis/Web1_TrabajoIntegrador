@@ -45,8 +45,8 @@ section article .Informacion{
 }
 
 .img-JuegosDestacados{
-    width: 420px;
-    height: auto;
+    width: auto;
+    height: 100%;
     padding: 0;
     border-radius: 5px;
     
@@ -84,6 +84,7 @@ section article .Informacion{
     text-align: center;
     color: white;
     font-size: 26px;
+    text-decoration: none;
 }
 
 .categorias {
@@ -96,6 +97,7 @@ section article .Informacion{
     padding: 3px 8px;
     border-radius: 10px;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .precio-suma {
@@ -108,24 +110,21 @@ section article .Informacion{
 
 }
 
-/* Diseño para los Top Games */
-
-article .TopGames{
-    text-align: center;
-    text-decoration: underline;
-    margin-top: 80px;
-    padding-top: 0.25rem;
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+/* Diseño para los botones del carrousel */
+.boton-cr{
+    background-color: #324a28;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 100%;
+    margin: 0 8px;
 }
 
-article .Portadas{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 5px;
-    padding: 5px;
+.boton-cr:hover{
+    background-color: #446635;
 }
-
 article .JuegosTop{    
     height: 290px;
     width: 192px;

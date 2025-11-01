@@ -13,6 +13,9 @@
     <link href="styles/styles-navegacion.css" rel="stylesheet">
     <link href="styles/styles-footer.css" rel="stylesheet">
 
+    <!-- Js -->
+    <script src="js/carrousel.js" defer></script>
+    
     <!-- Favicon-->
     <link href="resources/Favicon_Halo.ico" rel="icon" type="image/x-icon">
 
@@ -65,32 +68,36 @@
 
             <!-- Juegos destacados -->
             <div class="ContenedorJuegosDestacados" style="border-radius: 5px;">
+                <div><Button onclick="retrocederJuegoDestacado()" class="boton-cr"><</Button></div>
+
                 <div class ="JuegosDestacados">
-                    <img src="resources/img/Elder-Ring-Destacados-Reducido.jpg" alt="Imagen del juego destacado 1" class="img-JuegosDestacados">
+                    <a style="height: 240px; max-width: 400px;" href="" id="link-img-destacados"><img src="" alt="" class="img-JuegosDestacados" id="img-JuegosDestacados"></a>
+                    
                 </div>
         
                 <div class="InfoJuegosDestacados">
                     <!-- Titulo -->
-                    <h3 class="titulo-h3">Elden Ring</h3>
+                    <h3 style="margin: 0"><a class="titulo-h3" id="titulo-JuegosDestacados" href=""></a></h3>
 
                     <!-- Categorias-->
                     <div>
                         <ul style="padding: 0;">
-                            <li class="categorias">RPG</li>
-                            <li class="categorias">Mundo abierto</li>
-                            <li class="categorias">Un jugador</li>
-                            <li class="categorias">+17</li>
+                            <li id="categoria-1" class="categorias"></li>
+                            <li id="categoria-2" class="categorias"></li>
+                            <li id="categoria-3" class="categorias"></li>
                         </ul>
                     </div>
 
                     <!-- Precio y suma-->
                      <div style="width: 100%;">
                         <ul style="display: flex; flex-direction: row; justify-content: space-between; padding: 0; margin: 0;">
-                            <li class="precio-suma">$49.99</li>
-                            <li class="precio-suma">+</li>
+                            <li id="precio-JuegosDestacados" class="precio-suma">$49.99</li>
+                            <li style="cursor: pointer;" class="precio-suma">+</li>
                         </ul>
                      </div>
                 </div>
+
+                <div><Button onclick="avanzarJuegoDestacado()" class="boton-cr">></Button></div>
             </div>
             <br>
 
