@@ -1,0 +1,45 @@
+.conteiner{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 250px;
+    font-family: Playfair Display, serif;
+    font-size: large;
+}
+
+section article{
+    height: auto;
+    background-color: #659153;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 30px;
+    padding-left: 70px;
+}
+
+section article input{
+    background-color: #d4ffbf;
+    border: 2px solid black;
+    margin: 10px;
+    width: 90%;
+    height: 25px;
+}
+
+/* section article label{
+    
+} */
+
+section article textarea{
+    background-color: #d4ffbf;
+    border: 2px solid black;
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+}
+
+section article button{
+    background-color: #d4ffbf;
+    border: 2px solid black;
+    float: inline-end;
+    padding: 5px;
+    padding-left: 10px;padding-right: 10px;
+    margin-right: 100px;
+}
