@@ -2,19 +2,24 @@
 //  -- Inputs --
 const inputNombre = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
+const inputTelefono = document.querySelector('#telefono');
 const inputAsunto = document.querySelector('#asunto');
 const buttonEnviar = document.querySelector('#enviar');
 //  -- TextoValidaciones --
 const textNombre = document.querySelector('.nombreValidacion');
 const textEmail = document.querySelector('.emailValidacion');
+const textTelefono = document.querySelector('.telefonoValidacion');
 const textAsunto = document.querySelector('.asuntoValidacion');
-//  -- Validacion del correo --
+
+//  -- Validacion del correo y telefono / Expresion Regular --
 const emailValidacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const telefonoValidacion = /^\+?[1-9]\d{1,14}$/;
 
 //Objeto de Validación
 const validaciones = {
     nombre:  false,
     email: false,
+    telefono: true,
     asunto: false,
 };
 
@@ -25,8 +30,11 @@ function mensajeError(clase, mensaje, color){
     elemento.style.color = color;
 }
 
-//Validacion en tiempor real
+//-- Validacion en tiempor real--
+
+//-- Nombre --
 inputNombre.addEventListener("input", function(){
+    textNombre.innerHTML="";
     const value = this.value.trim();
     if(value.length >= 10 && value.length <= 20){
         this.style.borderColor = "green";
@@ -37,7 +45,9 @@ inputNombre.addEventListener("input", function(){
     }
 });
 
+//-- Correo Electronico / Email
 inputEmail.addEventListener("input", function(){
+    textEmail.innerHTML = "";
     const value = this.value.trim();
     if(emailValidacion.test(value)){
         this.style.borderColor = "green";
@@ -48,7 +58,22 @@ inputEmail.addEventListener("input", function(){
     }
 });
 
+//-- Telefono --
+inputTelefono.addEventListener("input",function(){
+    textTelefono.innerHTML ="";
+    const value = this.value.trim();
+    if(telefonoValidacion.test(value)){
+       this.style.borderColor = "green";
+       validaciones.telefono = true;
+    }else{
+        this.style.borderColor = "red";
+        validaciones.telefono = false;
+    }
+});
+
+//-- Asunto --
 inputAsunto.addEventListener("input",function(){
+    textAsunto.innerHTML = "";
     const value = this.value.trim();
     if(value.length > 0){
         this.style.borderColor = "green";
@@ -59,12 +84,10 @@ inputAsunto.addEventListener("input",function(){
     }
 });
 
-buttonEnviar.addEventListener("click",function(){
-    textNombre.innerHTML = "";
-    textEmail.innerHTML = "";
-    textAsunto.innerHTML = "";
+buttonEnviar.addEventListener("click",function(){    
     const nombre = inputNombre.value.trim();
     const email = inputEmail.value.trim();
+    const telefono = inputTelefono.value.trim();
     const asunto = inputAsunto.value.trim();
 
     //Mensajes para Nombre
@@ -83,8 +106,14 @@ buttonEnviar.addEventListener("click",function(){
         mensajeError('.emailValidacion','El formato del email es incorrecto.','red');
     }
 
-    //Mensaje para Asuntos
+    //Mensajes para Telefono
+    if(telefono === ""){
+        mensajeError('.telefonoValidacion','El casillero Telefono esta vacio.','red');
+    }else if(!telefonoValidacion.test(telefono)){
+        mensajeError('.telefonoValidacion', 'El formato del telefono es incorrecto.','red');
+    }
 
+    //Mensaje para Asuntos
     if(asunto === ""){
         mensajeError('.asuntoValidacion','El casillero Asuntos esta vacio.','red');
     }
