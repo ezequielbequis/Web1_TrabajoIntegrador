@@ -47,6 +47,19 @@ article .Comprar p{
     color: white;
 }
 
+article .Comprar button{
+    background-color: #659153;
+    border: 2px solid black;
+    float: inline-end;
+    height: 30.9px;
+    color: white;
+    cursor: pointer;
+}
+
+article .Comprar button:hover{
+    background-color: #76ad60;
+}
+
 article .Informacion{
     text-align: center;
     margin: 20px;
