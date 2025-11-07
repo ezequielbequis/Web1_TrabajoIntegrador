@@ -9,37 +9,76 @@
 section article{
     height: auto;
     background-color: #659153;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
     padding: 30px;
-    padding-left: 70px;
+}
+
+section article div{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;    
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1); 
+}
+
+section article .info{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 280px;    
+    padding: 20px;   
+}
+
+section article .info li{
+    list-style: square;
+}
+
+section article .formulario{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+}
+
+section article .formulario p{
+    font-size: small;
+    margin: 0;
+}
+
+section article form{
+    margin-bottom: 30px;
 }
 
 section article input{
     background-color: #d4ffbf;
-    border: 2px solid black;
+    border: 3px solid black;
+    border-radius: 5px;
     margin: 10px;
     width: 90%;
     height: 25px;
 }
 
-/* section article label{
-    
-} */
-
 section article textarea{
     background-color: #d4ffbf;
-    border: 2px solid black;
+    border: 3px solid black;
+    resize: none;    
+    border-radius: 5px;
     width: 90%;
-    height: 100px;
+    height: 150px;
     margin: 10px;
 }
 
 section article button{
     background-color: #d4ffbf;
     border: 2px solid black;
+    border-radius: 5px;    
     float: inline-end;
     padding: 5px;
     padding-left: 10px;padding-right: 10px;
     margin-right: 100px;
+    cursor:pointer;
 }

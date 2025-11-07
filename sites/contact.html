@@ -12,9 +12,13 @@
     <link href="../styles/styles-contact.css" rel="stylesheet">
     <link href="../styles/styles-footer.css" rel="stylesheet">
 
+    <!-- Scripts -->
+    <script src="../js/formulario.js" defer></script>
+
     <!-- Favicon-->
     <link href="../resources/Favicon_Halo.ico" rel="icon" type="/image/x-icon">
     
+    <!-- Titulo -->
     <title>Contacto</title>
 </head>
 </head>
@@ -38,24 +42,48 @@
         </div>
     </header>
 
-    
+
     <section class="conteiner">
         <article>
-            <form method="">
-                <label for="nombre">Nombre:</label>
-                <br>
-                <input type="text" id="nombre" name="nombre" placeholder="...">
-                <br>
-                <label for="asunto">Asunto:</label>
-                <br>
-                <input type="text" id="asunto" name="asunto" placeholder="...">
-                <br>
-                <label for="mensaje">Mensaje</label>
-                <br>
-                <textarea id="mensaje" name="mensaje" placeholder="Ingrese comentario..."></textarea>
-                <br>
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="info">
+                <h3>Información:</h3>
+                <ul>
+                    <h4 style="margin: 0;">Dirección:</h4>
+                    <li>123</li>
+                    <br>
+                    <h4 style="margin: 0;">Whatsapp:</h4>
+                    <li>Para consultas sobre instalación: <br> +123465789</li>
+                    <li>Para consultas sobre reembolso: <br> +123987654</li>
+                    <br>
+                    <h4 style="margin: 0;">Horarios de atención::</h4>
+                    <li>Lunes a Viernes: 00:00 a 23:59</li>
+                    <li>Sabados a Domingos y Feriados: No se atiende.</li>
+                </ul>
+            </div>
+            <div class="formulario" novalidate onsubmit="return false">
+                <form method="">
+                    <label for="nombre">Nombre:</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre" placeholder="...">
+                    <p class="nombreValidacion"></p>
+                    <br>
+                    <label for="mail">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="...">
+                    <p class="emailValidacion"></p>
+                    <br>
+                    <label for="asunto">Asunto:</label>
+                    <br>
+                    <input type="text" id="asunto" name="asunto" placeholder="...">
+                    <p class="asuntoValidacion"></p>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingrese comentario..."></textarea>
+                    <br>
+                    <button type="submit" id="enviar">Enviar</button>
+                </form>       
+            </div>     
         </article>
     </section>
     
