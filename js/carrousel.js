@@ -39,7 +39,7 @@ juegosDestacados.push(bm_wukong);
 const forza_horizon5 = {
     nombre: "Forza Horizon 5",
     categorias: ["Carreras", "Deportes", "Mundo Abierto"],
-    precio: "$59.99 USD",
+    precio: "$32.78 USD",
 
     src: "resources/img/ForzaHorizon5-Destacados.jpg",
     alt: "Imagen del juego Forza Horizon 5",
@@ -51,7 +51,7 @@ juegosDestacados.push(forza_horizon5);
 const resident_evil_4 = {
     nombre: "Resident Evil 4 Remake",
     categorias: ["Terror", "Supervivencia", "Acción"],
-    precio: "$59.99 USD",
+    precio: "$29.00 USD",
 
     src: "resources/img/ResidentEvil4-Destacados.jpg",
     alt: "Imagen del juego Resident Evil 4 Remake",
@@ -87,7 +87,7 @@ juegosDestacados.push(god_of_war_ragnarok);
 const sons_of_the_forest = {
     nombre: "Sons of the Forest",
     categorias: ["Terror", "Supervivencia", "Aventura"],
-    precio: "$49.99 USD",
+    precio: "$14.99 USD",
 
     src: "resources/img/SonsOfTheForest-Destacados.jpg",
     alt: "Imagen del juego Sons of the Forest",
