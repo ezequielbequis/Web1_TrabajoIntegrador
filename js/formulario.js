@@ -1,4 +1,3 @@
-//-- Elementos del DOM --
 //  -- Inputs --
 const inputNombre = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
@@ -10,6 +9,8 @@ const textNombre = document.querySelector('.nombreValidacion');
 const textEmail = document.querySelector('.emailValidacion');
 const textTelefono = document.querySelector('.telefonoValidacion');
 const textAsunto = document.querySelector('.asuntoValidacion');
+//  -- Mensaje de Confirmacion --
+const divMensaje = document.querySelector('.confirmacion');
 
 //  -- Validacion del correo y telefono / Expresion Regular --
 const emailValidacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -89,6 +90,7 @@ buttonEnviar.addEventListener("click",function(){
     const email = inputEmail.value.trim();
     const telefono = inputTelefono.value.trim();
     const asunto = inputAsunto.value.trim();
+    const mensaje = document.createElement('p');
 
     //Mensajes para Nombre
     if(nombre === ""){
@@ -116,6 +118,12 @@ buttonEnviar.addEventListener("click",function(){
     //Mensaje para Asuntos
     if(asunto === ""){
         mensajeError('.asuntoValidacion','El casillero Asuntos esta vacio.','red');
+    }
+
+    //Mensaje de Confirmacion
+    if(validaciones.nombre == true && validaciones.email == true && validaciones.telefono == true && validaciones.asunto == true){
+        mensaje.innerHTML = "Gracias por contactarnos, " + nombre + ". Nos comunicaremos contigo a la brevedad al correo, " + email + ", o al telefono, " + telefono + ".";
+        divMensaje.appendChild(mensaje);
     }
 
 });

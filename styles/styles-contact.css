@@ -24,6 +24,13 @@ section article div{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1); 
 }
 
+section .confirmacion{
+    background-color: #d4ffbf;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
 section article .info{
     text-align: left;
     display: flex;
