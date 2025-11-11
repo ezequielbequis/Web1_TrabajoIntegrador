@@ -124,6 +124,8 @@ buttonEnviar.addEventListener("click",function(){
     if(validaciones.nombre == true && validaciones.email == true && validaciones.telefono == true && validaciones.asunto == true){
         mensaje.innerHTML = "Gracias por contactarnos, " + nombre + ". Nos comunicaremos contigo a la brevedad al correo, " + email + ", o al telefono, " + telefono + ".";
         divMensaje.appendChild(mensaje);
+    }else{
+        divMensaje.innerHTML = "";
     }
 
 });
